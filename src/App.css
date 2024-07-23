@@ -1,0 +1,245 @@
+/* body { */
+  /* background-color: rgb(172, 206, 235); */
+  /* display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  align-items: center;
+  height: 100vh; 
+  margin: 0; */
+  
+/* } */
+
+.login{
+  display: block; 
+  margin-top: 130px;
+  margin-left: 450px;
+  width: 400px;
+}
+.forgotp{
+  display: block;
+  margin-top: 200px;
+  width: 400px;
+  margin-left: 450px;
+}
+.signup{
+  display: block;
+  margin-top: 100px;
+  width: 400px;
+  margin-left: 450px;
+}
+
+.container{
+  width: 100%;
+  
+}
+
+.home{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+}
+
+.sign{
+  text-align: center;
+}
+.log{
+  text-align: center;
+}
+.box {
+  border: 2px solid #dfdfdf ;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.g-btn {
+  width: 320px ;
+  height: 40px ;
+  line-height: 40px ;
+  font-size: 15px ;
+  
+}
+.g-btn > div, 
+.g-btn > div > svg { 
+  width: 340px  ;
+  height: 38px  ;
+  object-fit: cover;
+  position: absolute;
+}
+
+.fp, .rp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .rp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* styles.css (or your preferred CSS file) */
+/* styles.css */
+/* .container{ */
+  /* width:1000px
+} */
+.fixed-top .nav-link {
+  color: #fff; /* Default color */
+  transition: color 0.5s ease; /* Add transition for smooth hover effect */
+}
+
+ .nav-link:hover {
+  color: rgb(140, 34, 52); /* Hover color */
+}
+  
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  overflow: hidden; /* Ensure the overflow is hidden to prevent the gradient from overflowing */
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+select {
+  display: block;
+  width: 100%; /* Adjust width as necessary */
+  padding: 8px;
+  font-size: 16px;
+}
+
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
+.profile-image {
+  width: 32px; /* Adjust size as needed */
+  height: 32px; /* Adjust size as needed */
+  border-radius: 50%;
+}
+
+.profile-preview {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 200px; /* Adjust size as needed */
+  border-radius: 50%;
+}
+
+.profile-image {
+  width: 32px; /* Adjust size as needed */
+  height: 32px; /* Adjust size as needed */
+  border-radius: 50%;
+}
+
+.profile-dropdown > .btn-secondary.dropdown-toggle::after {
+  display: none; /* Hide the dropdown caret */
+}
+
+.dropdown-toggle {
+  background-color: #6c757d !important; /* Change background color */
+  color: #fff !important; /* Change text color */
+  border-color: #6c757d !important; /* Change border color */
+}
+
+/* .dropdown-menu {
+  background-color: #6c757d !important; /* Change background color */
+/* } */ 
+/* 
+.dropdown-item {
+  color: #fff !important; /* Change text color */
+/* } */ */
+
+.dropdown-divider {
+  background-color: #2f0d4d !important; /* Change divider color */
+}
+
+.dropdown-item-text {
+  color: #031201 !important; /* Change text color */
+}
+
+.dropdown-email {
+  /* padding: 10px; */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+
+
+
+.brand-name {
+  background: linear-gradient(90deg, #3b7cff, #ff4c4c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,45 @@
+.header {
+    /* Adjust padding and margin as needed */
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    /* Adjust logo size and styling */
+    width: 50px;
+    height: 50px;
+  }
+  
+  .nav-link {
+    /* Style navigation links (color, hover effects, etc.) */
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .profile-section {
+    /* Style profile section elements (color, spacing, etc.) */
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-section a {
+    /* Style profile links (color, hover effects, etc.) */
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .profile-section a:hover {
+    color: #007bff;
+  }
+  
+  .footer {
+    /* Style the footer (background color, text color, etc.) */
+    background-color: #f5f5f5;
+    padding: 10px;
+  }
+  

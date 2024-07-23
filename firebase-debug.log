@@ -1,0 +1,140 @@
+[debug] [2024-07-23T07:38:44.569Z] ----------------------------------------------------------------------
+[debug] [2024-07-23T07:38:44.572Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Anup Singh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-07-23T07:38:44.573Z] CLI Version:   13.13.3
+[debug] [2024-07-23T07:38:44.573Z] Platform:      win32
+[debug] [2024-07-23T07:38:44.573Z] Node Version:  v20.11.1
+[debug] [2024-07-23T07:38:44.573Z] Time:          Tue Jul 23 2024 13:08:44 GMT+0530 (India Standard Time)
+[debug] [2024-07-23T07:38:44.573Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-23T07:38:44.577Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-07-23T07:38:44.631Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-23T07:38:44.632Z] > authorizing via signed-in user (anup32633@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\001\my-app
+
+[debug] [2024-07-23T07:38:45.467Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-07-23T07:38:45.468Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-07-23T07:40:53.218Z] > refreshing access token with scopes: []
+[debug] [2024-07-23T07:40:53.221Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-07-23T07:40:53.221Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-07-23T07:40:53.698Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-07-23T07:40:53.698Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-07-23T07:40:53.714Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-07-23T07:40:54.747Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-07-23T07:40:54.747Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project otest-39daa (Otest) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-07-23T07:41:04.211Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/otest-39daa/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-07-23T07:41:04.212Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/otest-39daa/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/otest-39daa
+[debug] [2024-07-23T07:41:06.740Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/otest-39daa/services/firebasedatabase.googleapis.com 200
+[debug] [2024-07-23T07:41:06.740Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/otest-39daa/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-07-23T07:41:06.741Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/otest-39daa/locations/-/instances/otest-39daa-default-rtdb [none]
+[debug] [2024-07-23T07:41:08.903Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/otest-39daa/locations/-/instances/otest-39daa-default-rtdb 200
+[debug] [2024-07-23T07:41:08.903Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/otest-39daa/locations/-/instances/otest-39daa-default-rtdb {"name":"projects/349577665235/locations/us-central1/instances/otest-39daa-default-rtdb","project":"projects/349577665235","databaseUrl":"https://otest-39daa-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-07-23T07:42:04.540Z] ----------------------------------------------------------------------
+[debug] [2024-07-23T07:42:04.544Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Anup Singh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-07-23T07:42:04.544Z] CLI Version:   13.13.3
+[debug] [2024-07-23T07:42:04.544Z] Platform:      win32
+[debug] [2024-07-23T07:42:04.545Z] Node Version:  v20.11.1
+[debug] [2024-07-23T07:42:04.545Z] Time:          Tue Jul 23 2024 13:12:04 GMT+0530 (India Standard Time)
+[debug] [2024-07-23T07:42:04.545Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-23T07:42:04.552Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-23T07:42:04.552Z] > authorizing via signed-in user (anup32633@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\001\my-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-07-23T07:42:17.369Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-07-23T07:42:18.634Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-07-23T07:42:18.634Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project otest-39daa (Otest) 
+[info] 
+=== Hosting Setup
+[debug] [2024-07-23T07:42:20.828Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/otest-39daa [none]
+[debug] [2024-07-23T07:42:21.499Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/otest-39daa 200
+[debug] [2024-07-23T07:42:21.499Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/otest-39daa {"projectId":"otest-39daa","projectNumber":"349577665235","displayName":"Otest","name":"projects/otest-39daa","resources":{"hostingSite":"otest-39daa","realtimeDatabaseInstance":"otest-39daa-default-rtdb","storageBucket":"otest-39daa.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_c67c3599-2399-42ed-9830-7fc32933beb6"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-07-23T07:42:34.118Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-07-23T07:42:34.420Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-07-23T07:42:34.420Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.12.4","browserURL":"https://www.gstatic.com/firebasejs/10.12.4/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.12.4/firebase.tgz"},"live":{"version":"10.12","browserURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.12.4/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.12.4/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.12.4/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.12.4/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.12.4/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.12.4/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.12.4/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.12.4/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.12.4/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.12.4/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.12.4/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.12.4/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at D:\001\my-app 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=544149518&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-07-23T07:42:40.445Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-07-23T07:42:40.445Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-07-23T07:42:41.018Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-07-23T07:42:41.019Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-07-23T07:42:41.023Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-07-23T07:42:41.670Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-07-23T07:42:41.670Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"asd-07","id":83635450,"node_id":"MDQ6VXNlcjgzNjM1NDUw","avatar_url":"https://avatars.githubusercontent.com/u/83635450?v=4","gravatar_id":"","url":"https://api.github.com/users/asd-07","html_url":"https://github.com/asd-07","followers_url":"https://api.github.com/users/asd-07/followers","following_url":"https://api.github.com/users/asd-07/following{/other_user}","gists_url":"https://api.github.com/users/asd-07/gists{/gist_id}","starred_url":"https://api.github.com/users/asd-07/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/asd-07/subscriptions","organizations_url":"https://api.github.com/users/asd-07/orgs","repos_url":"https://api.github.com/users/asd-07/repos","events_url":"https://api.github.com/users/asd-07/events{/privacy}","received_events_url":"https://api.github.com/users/asd-07/received_events","type":"User","site_admin":false,"name":"ANUP SINGH","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":13,"public_gists":0,"followers":0,"following":0,"created_at":"2021-05-04T07:33:28Z","updated_at":"2024-07-09T09:15:04Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":1623,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as asd-07 
+[info] 
+[debug] [2024-07-23T07:42:56.548Z] >>> [apiv2][query] GET https://api.github.com/repos/AnupNavriti/Assessment/actions/secrets/public-key type=owner
+[debug] [2024-07-23T07:42:57.141Z] <<< [apiv2][status] GET https://api.github.com/repos/AnupNavriti/Assessment/actions/secrets/public-key 403
+[debug] [2024-07-23T07:42:57.141Z] <<< [apiv2][body] GET https://api.github.com/repos/AnupNavriti/Assessment/actions/secrets/public-key {"message":"Must have admin rights to Repository.","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"403"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-07-23T07:43:00.585Z] >>> [apiv2][query] GET https://api.github.com/repos/AnupNavriti/Assessment/actions/secrets/public-key type=owner
+[debug] [2024-07-23T07:43:00.951Z] <<< [apiv2][status] GET https://api.github.com/repos/AnupNavriti/Assessment/actions/secrets/public-key 403
+[debug] [2024-07-23T07:43:00.951Z] <<< [apiv2][body] GET https://api.github.com/repos/AnupNavriti/Assessment/actions/secrets/public-key {"message":"Must have admin rights to Repository.","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"403"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
